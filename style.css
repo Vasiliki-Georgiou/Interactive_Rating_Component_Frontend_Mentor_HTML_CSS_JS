@@ -33,6 +33,8 @@ body {
 
 /* End of Common Styles */
 
+/* CSS Styles for 1st card */
+
 .card {
   width: 26.5rem;
   height: 26.5rem;
@@ -40,6 +42,10 @@ body {
   padding: 1rem;
   position: relative;
   border-radius: 1.2rem;
+}
+
+.hidden {
+  display: none;
 }
 
 .star-container {
@@ -99,9 +105,76 @@ body {
   background-color: var(--orange);
 }
 
-.rating-container button:hover,
+.rating-container button:hover {
+  background-color: var(--orange);
+  color: var(--dark_blue);
+}
+
+
 .rating-container button:active,
+.rating-container button:focus,
 .btn:hover,
-.btn:active {
+.btn:active,
+.btn:focus {
   background-color: var(--white);
 }
+
+/* End of CSS Styles for 1st card */
+
+/* CSS Styles for 2nd card */
+
+.image-container {
+  display: grid;
+  place-items: center;
+}
+
+.image-container img {
+  width: 10rem;
+}
+
+.score {
+  background-color: var(--dark_grey);
+  width: 15rem;
+  margin: 1rem auto 1.5rem auto;
+  padding: 0.1rem 0;
+  border-radius: 4rem;
+}
+
+.score p {
+  color: var(--orange);
+  text-align: center;
+  transform: translateY(50%);
+  font-weight: 400;
+}
+
+.card-2 h5 {
+  font-weight: 400
+}
+
+.card-2 h5,
+.card-2 p {
+  text-align: center;
+}
+
+.card-2 p.card-text {
+  margin: 0;
+}
+/* End of CSS Styles for 2nd card */
+
+/* Responsive */
+
+@media (min-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+
+
+/* End of Responsive */
